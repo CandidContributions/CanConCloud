@@ -1,0 +1,18 @@
+{
+  "Name": "Content Picker - Person",
+  "Alias": null,
+  "EditorAlias": "Umbraco.MultiNodeTreePicker",
+  "DatabaseType": 0,
+  "Configuration": {"startNode":{"type":"content","query":"$root/libraryRoot/peopleFolder","id":null},"filter":"person","minNumber":0,"maxNumber":1,"showOpenButton":true,"ignoreUserStartNodes":false},
+  "Parent": "umb://data-type-container/22524146a2494edaae6b8ffe5d95ac9a",
+  "Udi": "umb://data-type/2e9d0ee63e384bc2984a909011298354",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/22524146a2494edaae6b8ffe5d95ac9a",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.0.1"
+}

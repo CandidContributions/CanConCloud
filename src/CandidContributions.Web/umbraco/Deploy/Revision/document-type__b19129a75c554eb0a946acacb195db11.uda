@@ -1,0 +1,115 @@
+{
+  "Name": "_Meta Tags",
+  "Alias": "metaTags",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/0606ef6edde840ccb0c24e9565989e90",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "76f69cbf-e08d-4e12-8cdc-0e3b8bb4d7ee",
+      "Name": "Meta Tags",
+      "SortOrder": 100,
+      "Type": 0,
+      "Alias": "metaTags",
+      "PropertyTypes": [
+        {
+          "Key": "62c203a8-b9d0-4dc3-96ae-b5567eb8c165",
+          "Alias": "metaKeywords",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "meta keywords, has default value",
+          "Mandatory": false,
+          "Name": "Keywords",
+          "SortOrder": 2,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "81b9ea7f-bf69-4469-8469-184bbef1ad63",
+          "Alias": "metaTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "browser and OG title, defaults to node name",
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "bb8d9568-2d99-4de2-aabb-e67b729d5bac",
+          "Alias": "metaDescription",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "meta and OG description,  has default value",
+          "Mandatory": false,
+          "Name": "Description",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "f4d95372-a474-441a-bc89-0f930ca9d3b5",
+          "Alias": "openGraphImage",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "Leave blank to use the default image",
+          "Mandatory": false,
+          "Name": "Open Graph image",
+          "SortOrder": 3,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b19129a75c554eb0a946acacb195db11",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/0606ef6edde840ccb0c24e9565989e90",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

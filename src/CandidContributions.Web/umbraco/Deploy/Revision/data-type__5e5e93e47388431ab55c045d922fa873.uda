@@ -1,0 +1,18 @@
+{
+  "Name": "Nested - Day Schedule Entries",
+  "Alias": null,
+  "EditorAlias": "Umbraco.NestedContent",
+  "DatabaseType": 0,
+  "Configuration": {"contentTypes":[{"ncAlias":"dayScheduleEntry","ncTabAlias":"Details","nameTemplate":"{{startTimeUTC}}{{ hidden === '1' ? ' [HIDDEN]' : '' }}: {{title}} ({{durationMins}}m)"}],"confirmDeletes":true,"showIcons":true,"hideLabel":true},
+  "Parent": "umb://data-type-container/5d1c2fda33ff416d8daf7c65c9aa9f1c",
+  "Udi": "umb://data-type/5e5e93e47388431ab55c045d922fa873",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/5d1c2fda33ff416d8daf7c65c9aa9f1c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.0.1"
+}

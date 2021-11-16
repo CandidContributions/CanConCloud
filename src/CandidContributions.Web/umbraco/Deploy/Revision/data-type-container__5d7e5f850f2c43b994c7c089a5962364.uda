@@ -1,0 +1,10 @@
+{
+  "Name": "Custom",
+  "Alias": null,
+  "ContainedObjectType": "30a2a501-1978-4ddb-a57b-f7efed43ba3c",
+  "Parent": null,
+  "Udi": "umb://data-type-container/5d7e5f850f2c43b994c7c089a5962364",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContainerArtifact",
+  "__version": "9.0.1"
+}

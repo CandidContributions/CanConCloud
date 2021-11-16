@@ -1,0 +1,110 @@
+{
+  "Name": "AutoRoundSettings",
+  "Alias": "autoRoundSettings",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-settings-alt-2 color-indigo",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/127e9e96bec74793b9af82c17777e8eb",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "cc33b3fc-bfcd-409b-a91c-00b1d9aa5789",
+      "Name": "Settings",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "settings",
+      "PropertyTypes": [
+        {
+          "Key": "496f9ada-b5d9-4e92-96c3-5c9af3838b93",
+          "Alias": "preferedTimeout",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "In seconds\nBot will try to skew random between min and max towards this number",
+          "Mandatory": false,
+          "Name": "Prefered Timeout",
+          "SortOrder": 2,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "7364a6a2-5827-4eed-970c-4bd06c986b81",
+          "Alias": "preferedTimeoutSkewPercentage",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "between 0 and 100, values over this will be reduced to these values",
+          "Mandatory": false,
+          "Name": "Prefered Timeout Skew Percentage",
+          "SortOrder": 3,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "8a6b0f14-5e76-4d7e-a342-f4a82ad1bcca",
+          "Alias": "minimumTimeOut",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "In seconds",
+          "Mandatory": false,
+          "Name": "Minimum Time Out",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "eed2f748-4fe1-4665-b42f-d24dcb00cd9e",
+          "Alias": "maximumTimeout",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "In seconds",
+          "Mandatory": false,
+          "Name": "Maximum Timeout",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/e867c796f5f84dcca4eac2c421c60e98",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/127e9e96bec74793b9af82c17777e8eb",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

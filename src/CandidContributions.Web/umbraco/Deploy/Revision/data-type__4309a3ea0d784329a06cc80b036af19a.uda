@@ -1,0 +1,12 @@
+{
+  "Name": "Media Picker Fancy Pants",
+  "Alias": null,
+  "EditorAlias": "Umbraco.MediaPicker3",
+  "DatabaseType": 0,
+  "Configuration": {"filter":null,"multiple":false,"validationLimit":{"min":0,"max":1},"startNodeId":null,"ignoreUserStartNodes":false,"enableLocalFocalPoint":false,"crops":[]},
+  "Parent": null,
+  "Udi": "umb://data-type/4309a3ea0d784329a06cc80b036af19a",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.0.1"
+}

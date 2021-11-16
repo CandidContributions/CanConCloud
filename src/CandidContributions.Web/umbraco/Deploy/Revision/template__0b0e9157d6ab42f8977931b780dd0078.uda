@@ -1,0 +1,16 @@
+{
+  "Name": "Episodes Folder",
+  "Alias": "EpisodesFolder",
+  "File": "umb://template-file/EpisodesFolder.cshtml",
+  "Master": null,
+  "Udi": "umb://template/0b0e9157d6ab42f8977931b780dd0078",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/EpisodesFolder.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "9.0.1"
+}

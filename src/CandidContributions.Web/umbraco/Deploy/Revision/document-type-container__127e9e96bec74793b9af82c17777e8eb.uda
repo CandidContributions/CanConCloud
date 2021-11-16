@@ -1,0 +1,16 @@
+{
+  "Name": "Settings",
+  "Alias": null,
+  "ContainedObjectType": "a2cb7800-f571-4787-9638-bc48539a0efb",
+  "Parent": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+  "Udi": "umb://document-type-container/127e9e96bec74793b9af82c17777e8eb",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContainerArtifact",
+  "__version": "9.0.1"
+}

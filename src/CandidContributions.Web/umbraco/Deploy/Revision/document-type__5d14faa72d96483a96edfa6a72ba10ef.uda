@@ -1,0 +1,50 @@
+{
+  "Name": "BingoFolder",
+  "Alias": "bingoFolder",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-folder-outline color-indigo",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/445b1add66b847e2b81b8ff9bcf8f94c",
+      "umb://document-type/4e9a4ae43d8749139167ee7809bd8ad0",
+      "umb://document-type/59812495c97c4886898bf1ff1fed3e52"
+    ]
+  },
+  "Parent": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/5d14faa72d96483a96edfa6a72ba10ef",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/445b1add66b847e2b81b8ff9bcf8f94c",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/4e9a4ae43d8749139167ee7809bd8ad0",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/59812495c97c4886898bf1ff1fed3e52",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

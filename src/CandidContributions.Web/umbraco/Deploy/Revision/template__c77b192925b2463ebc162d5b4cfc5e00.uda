@@ -1,0 +1,16 @@
+{
+  "Name": "BingoSettings",
+  "Alias": "BingoSettings",
+  "File": "umb://template-file/BingoSettings.cshtml",
+  "Master": null,
+  "Udi": "umb://template/c77b192925b2463ebc162d5b4cfc5e00",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/BingoSettings.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "9.0.1"
+}

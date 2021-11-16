@@ -1,0 +1,38 @@
+{
+  "Name": "People Folder",
+  "Alias": "peopleFolder",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-user-females color-cyan",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": true,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/81d93280e7194c0eb4029f9014e6935d"
+    ]
+  },
+  "Parent": "umb://document-type-container/d3ea95069d4d4608a89a3261bb7c789a",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b09a5c20d4fb47fa8e0f05020b2e5a50",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/d3ea95069d4d4608a89a3261bb7c789a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/81d93280e7194c0eb4029f9014e6935d",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

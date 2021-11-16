@@ -1,0 +1,136 @@
+{
+  "Name": "Person",
+  "Alias": "person",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-user-female color-cyan",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/aac9fa0e4ae9440789680ebe8cfb9807",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "3181ae36-83e7-47ce-b96f-608813fbad2b",
+      "Name": "Person Details",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "personDetails",
+      "PropertyTypes": [
+        {
+          "Key": "0ded44bd-a46f-49a6-a46b-bbd3cd0f8d27",
+          "Alias": "image",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "136px x 136px 'rounded' image",
+          "Mandatory": false,
+          "Name": "Image",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "74435693-c373-4429-8a77-19d715f847bf",
+          "Alias": "fullName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "'full name' cos of course an alias of 'name' is not allowed",
+          "Mandatory": true,
+          "Name": "Full name",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "91aaa64e-0562-4780-857e-86badda0a96b",
+          "Alias": "twitterHandle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Twitter handle",
+          "SortOrder": 4,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "ac9b9e76-73b3-446d-b990-a6a3f9806c91",
+          "Alias": "about",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Paragraph for schedule popup",
+          "Mandatory": false,
+          "Name": "About",
+          "SortOrder": 3,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "e33e05e7-f9a0-4450-a343-cdeda3f6db96",
+          "Alias": "description",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "e.g. Candid Contribution Host, Microsoft MVP, that sort of thing 😉",
+          "Mandatory": false,
+          "Name": "Description",
+          "SortOrder": 2,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/81d93280e7194c0eb4029f9014e6935d",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/aac9fa0e4ae9440789680ebe8cfb9807",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

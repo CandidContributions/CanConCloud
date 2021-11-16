@@ -1,0 +1,16 @@
+{
+  "Name": "Event status",
+  "Alias": "EventStatus",
+  "File": "umb://template-file/EventStatus.cshtml",
+  "Master": null,
+  "Udi": "umb://template/3e8394455ee54260a2c31e6c507ee076",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/EventStatus.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "9.0.1"
+}

@@ -1,0 +1,69 @@
+{
+  "Name": "DiscordBotFolder",
+  "Alias": "discordBotFolder",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-folders color-indigo",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": true,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/5d14faa72d96483a96edfa6a72ba10ef"
+    ]
+  },
+  "Parent": "umb://document-type-container/79804e7cff5048e6807ef8f76a32ccc3",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "69f6228c-6c3b-40ed-8208-3c3507bff6cb",
+      "Name": "Api Settings",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "apiSettings",
+      "PropertyTypes": [
+        {
+          "Key": "048b7acb-f947-48ff-b3a8-6b5e4927b468",
+          "Alias": "secret",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Secret",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/10711bb176a249f0a1334faed8a08755",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/79804e7cff5048e6807ef8f76a32ccc3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5d14faa72d96483a96edfa6a72ba10ef",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

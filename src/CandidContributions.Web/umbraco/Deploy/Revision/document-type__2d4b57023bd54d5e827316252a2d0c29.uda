@@ -1,0 +1,210 @@
+{
+  "Name": "Episode",
+  "Alias": "episode",
+  "DefaultTemplate": "umb://template/b729a4c078bb45a190c9eb4f25e1569b",
+  "AllowedTemplates": [
+    "umb://template/b729a4c078bb45a190c9eb4f25e1569b"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/021ade625f0d4476aa0fdaba0c90137b",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "bca1fcd9-ac4e-489e-865b-d53e9c259a88",
+      "Name": "API Info",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "aPIInfo",
+      "PropertyTypes": [
+        {
+          "Key": "04cbab72-2a78-4abd-8674-a412971de552",
+          "Alias": "podcastLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Link to episode .mp3",
+          "Mandatory": false,
+          "Name": "Podcast Link",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "2dc40443-2aa2-4d2b-b793-0a1b6fdbaa19",
+          "Alias": "publishedDate",
+          "DataType": "umb://data-type/0e9794ebf9b54f20a78893acd233a7e4",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Published Date",
+          "SortOrder": 3,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "38b8f63c-a854-451a-86bf-a6d421bdc751",
+          "Alias": "listensCount",
+          "DataType": "umb://data-type/8e7f995cbd8146279932c40e568ec788",
+          "Description": "Sum of plays and downloads",
+          "Mandatory": false,
+          "Name": "Listens Count",
+          "SortOrder": 4,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "4f81fbe1-afe7-4d7e-a102-0ab4fe1c598f",
+          "Alias": "showNotes",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "This is fed automatically from API",
+          "Mandatory": false,
+          "Name": "Show Notes",
+          "SortOrder": 5,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "ad6c1d21-3ff6-4229-9ed5-623dfb0f3eb0",
+          "Alias": "spreakerId",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": "Episode id, used for lookup when doing API",
+          "Mandatory": false,
+          "Name": "Spreaker Id",
+          "SortOrder": 2,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "b71ffd02-61f9-44ad-90e8-86a5799e99f3",
+          "Alias": "podcastTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Podcast Title",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    },
+    {
+      "Key": "e1a009c9-edda-436e-b42b-e2ebc693edf0",
+      "Name": "Further Details",
+      "SortOrder": 1,
+      "Type": 0,
+      "Alias": "furtherDetails",
+      "PropertyTypes": [
+        {
+          "Key": "af0c83c0-797f-4f2c-bdde-fbc9565aefa1",
+          "Alias": "displayTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "If blank, Podcast title will be used on the website",
+          "Mandatory": false,
+          "Name": "Display Title",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "c6022f1d-14b0-4ed3-b078-ba861d776cdb",
+          "Alias": "homePageIntro",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "If blank, Description (max 200 chars) will be used",
+          "Mandatory": false,
+          "Name": "Home Page Intro",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/2d4b57023bd54d5e827316252a2d0c29",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0e9794ebf9b54f20a78893acd233a7e4",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/8e7f995cbd8146279932c40e568ec788",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/021ade625f0d4476aa0fdaba0c90137b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/b729a4c078bb45a190c9eb4f25e1569b",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

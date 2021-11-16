@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Api\DiscordBot\**" />
+    <Compile Remove="Models\Api\GitHub\**" />
+    <EmbeddedResource Remove="Models\Api\DiscordBot\**" />
+    <EmbeddedResource Remove="Models\Api\GitHub\**" />
+    <None Remove="Models\Api\DiscordBot\**" />
+    <None Remove="Models\Api\GitHub\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Api\DiscordBotController.cs" />
+    <Compile Remove="Controllers\Api\MailchimpApiController.cs" />
+    <Compile Remove="Models\Api\GuestbookContribution.cs" />
+    <Compile Remove="Models\Api\GuestbookEntry.cs" />
+    <Compile Remove="Models\Pages\EventStatusModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cultiv.Hangfire" Version="1.0.0" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="9.0.1" />
+    <PackageReference Include="Umbraco.Cms.Infrastructure" Version="9.0.1" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Jobs\" />
+    <Folder Include="Notifications\" />
+  </ItemGroup>
+
+</Project>

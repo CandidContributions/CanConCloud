@@ -1,0 +1,18 @@
+{
+  "Name": "Dropdown - Schedule Tags",
+  "Alias": null,
+  "EditorAlias": "Umbraco.DropDown.Flexible",
+  "DatabaseType": 1,
+  "Configuration": {"multiple":true,"items":[{"id":4,"value":"Community Time"},{"id":5,"value":"First Timer Session"},{"id":3,"value":"Guided Conversation"},{"id":1,"value":"Hackathon"},{"id":2,"value":"Lightning Talk"}]},
+  "Parent": "umb://data-type-container/7a9034aac51349b89181097a40938db6",
+  "Udi": "umb://data-type/210bf276b3b84826a2a8a98a79e38f8c",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/7a9034aac51349b89181097a40938db6",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.0.1"
+}

@@ -1,0 +1,89 @@
+﻿@model CandidContributions.Core.Models.Forms.EventSignupForm
+<div class="component event-sign-up has-background" id="signup">
+    <div class="container">
+        <div class="row">
+            @Html.Raw(Model.Text)
+        </div>
+
+        @if (!string.IsNullOrWhiteSpace(Model.MailchimpGroupId))
+        {
+            <form id="event-signup-form">
+                <div class="row">
+                    <div class="col-2">
+                        @Html.LabelFor(model => model.Email, "Email address *")
+                    </div>
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.Email)
+                    </div>
+                    <div class="col-6">
+                        <span id="EmailInvalid" class="invalid" style="display: none;">Please specify a valid email address</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        @Html.LabelFor(model => model.First, "First name")
+                    </div>
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.First)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        @Html.LabelFor(model => model.Last, "Last name")
+                    </div>
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.Last)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                        <button type="button" id="event-signup-button">Sign up</button>
+                    </div>
+                </div>
+            </form>
+            <div id="event-signup-confirmed" style="display: none;">
+                <h4>Thank you for signing up, we look forward to seeing you soon!</h4>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        }
+    </div>
+</div>
+<script type="text/javascript">
+    var submitBtn = document.querySelector('#event-signup-button');
+    submitBtn.addEventListener('click', submitSignup);
+
+    function submitSignup() {
+        var email = document.querySelector('#Email').value;
+        document.querySelector('#EmailInvalid').style.display = "none";
+
+        if (email) {
+            var first = document.querySelector('#First').value;
+            var last = document.querySelector('#Last').value;
+            fetch('/umbraco/api/MailchimpApi/EventSignup',
+                {
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    method: 'post',
+                    body: JSON.stringify({
+                        email: email,
+                        first: first,
+                        last: last,
+                        MailchimpGroupId: "@Model.MailchimpGroupId"
+                    })
+                }).then(function(response) {
+                    if (response.ok) {
+                        document.querySelector('#event-signup-form').style.display = "none";
+                        document.querySelector('#event-signup-confirmed').style.display = "block";
+                    } else {
+                        document.querySelector('#EmailInvalid').style.display = "block";
+                    }
+                });
+        } else {
+            document.querySelector('#EmailInvalid').style.display = "block";
+        }
+    }
+</script>

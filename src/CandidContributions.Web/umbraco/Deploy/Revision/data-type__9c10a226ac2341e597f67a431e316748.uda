@@ -1,0 +1,18 @@
+{
+  "Name": "Slider - Schedule Duration",
+  "Alias": null,
+  "EditorAlias": "Umbraco.Slider",
+  "DatabaseType": 1,
+  "Configuration": {"enableRange":false,"initVal1":60.0,"initVal2":0.0,"minVal":15.0,"maxVal":180.0,"step":5.0},
+  "Parent": "umb://data-type-container/164e563290e14c7fa1fde6f4f4af8625",
+  "Udi": "umb://data-type/9c10a226ac2341e597f67a431e316748",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/164e563290e14c7fa1fde6f4f4af8625",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.0.1"
+}

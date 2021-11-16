@@ -1,0 +1,62 @@
+{
+  "Name": "Settings",
+  "Alias": "settings",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-settings-alt color-black",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": true,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/53c89312d9854a7d939511d1bad46299",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "0eb743b2-ccfa-4627-a49e-99aec91e097c",
+      "Name": "Navigation",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "navigation",
+      "PropertyTypes": [
+        {
+          "Key": "3a816436-0a59-4876-9d09-55d2cef28705",
+          "Alias": "topMenuItems",
+          "DataType": "umb://data-type/b4e3535a175347e28568602cf8cfee6f",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Top menu items",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/62a9c659fdc5493d9767935059223305",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/b4e3535a175347e28568602cf8cfee6f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/53c89312d9854a7d939511d1bad46299",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

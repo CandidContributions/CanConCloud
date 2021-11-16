@@ -1,0 +1,12 @@
+{
+  "Name": "BingoPhrase Alternatives",
+  "Alias": null,
+  "EditorAlias": "Umbraco.NestedContent",
+  "DatabaseType": 0,
+  "Configuration": {"contentTypes":[{"ncAlias":"alternateBingoPhrase","ncTabAlias":"Content","nameTemplate":"{{name}}"}],"confirmDeletes":true,"showIcons":true,"hideLabel":false},
+  "Parent": null,
+  "Udi": "umb://data-type/ad9ebe032c14439fb2713b1a03ed0dd6",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.0.1"
+}

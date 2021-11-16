@@ -1,0 +1,136 @@
+{
+  "Name": "Event status",
+  "Alias": "eventStatus",
+  "DefaultTemplate": "umb://template/3e8394455ee54260a2c31e6c507ee076",
+  "AllowedTemplates": [
+    "umb://template/3e8394455ee54260a2c31e6c507ee076"
+  ],
+  "Icon": "icon-fire color-black",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/021ade625f0d4476aa0fdaba0c90137b",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "0e074f84-9d44-466c-b02b-38818a2decd5",
+      "Name": "Banner",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "banner",
+      "PropertyTypes": [
+        {
+          "Key": "35e365d9-bb65-409c-8884-4b0165b03dad",
+          "Alias": "showPromo",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "Tick to activate the status page banner - has to be done manually, not done on date",
+          "Mandatory": false,
+          "Name": "Show promo?",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "8b2e5c89-5408-42a4-a439-e8555d39fcad",
+          "Alias": "statusPromo",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "Wording for a status promo banner on the parent event page",
+          "Mandatory": false,
+          "Name": "Status promo",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    },
+    {
+      "Key": "a262cee3-7b87-4910-a0f1-997973e5d48d",
+      "Name": "Page Content",
+      "SortOrder": 1,
+      "Type": 0,
+      "Alias": "pageContent",
+      "PropertyTypes": [
+        {
+          "Key": "01d83c33-4a02-4d1b-a874-72f4b1140115",
+          "Alias": "heading",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Heading",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "b18e7b6c-fe80-4b0d-9891-33696ffb92c1",
+          "Alias": "introduction",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Introduction",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/471aae78e4c14fbc9e0c36f034bfc900",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/021ade625f0d4476aa0fdaba0c90137b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/3e8394455ee54260a2c31e6c507ee076",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

@@ -1,0 +1,45 @@
+{
+  "Name": "Episodes Folder",
+  "Alias": "episodesFolder",
+  "DefaultTemplate": "umb://template/0b0e9157d6ab42f8977931b780dd0078",
+  "AllowedTemplates": [
+    "umb://template/0b0e9157d6ab42f8977931b780dd0078"
+  ],
+  "Icon": "icon-folder-close color-black",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": true,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/2d4b57023bd54d5e827316252a2d0c29"
+    ]
+  },
+  "Parent": "umb://document-type-container/d3ea95069d4d4608a89a3261bb7c789a",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/66f965c19fa54db1b7f18b7d5eb873b5",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/d3ea95069d4d4608a89a3261bb7c789a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/2d4b57023bd54d5e827316252a2d0c29",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/0b0e9157d6ab42f8977931b780dd0078",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

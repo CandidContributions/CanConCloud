@@ -1,0 +1,50 @@
+﻿@using CandidContributions.Core.Helpers
+@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+@{
+    var settingsNode = Umbraco.GetRootSettingsNode();
+}
+
+<header>
+    <div class="header-layout main-content">
+        <div>
+            <a href="/" class="link--icon">
+                <img class="header-layout--logo" src="~/images/logo_white.png" alt="logo" />
+                <span class="header-layout--title cancon-hand">Candid Contributions Podcast</span>
+            </a>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    @foreach (var link in settingsNode.TopMenuItems)
+                    {
+                        switch (link.Type)
+                        {
+                            case LinkType.Content:
+                                if (Umbraco.Content(link.Udi) is INavigation linkPage)
+                                {
+                                    <li>
+                                        <a href="@link.Url" class="link--icon" target="@link.Target">
+                                            @if (linkPage.MenuIcon != null)
+                                            {
+                                                <img src="@linkPage.MenuIcon.MediaUrl()" alt="@link.Name"/>
+                                            }
+                                            <span>@link.Name</span>
+                                        </a>
+                                    </li>
+                                }
+                                break;
+
+                            case LinkType.External:
+                                <li>
+                                    <a href="@link.Url" target="@link.Target">@link.Name</a>
+                                </li>
+                                break;
+                        }
+                    }
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

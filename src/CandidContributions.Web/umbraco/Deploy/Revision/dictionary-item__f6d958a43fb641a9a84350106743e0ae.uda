@@ -1,0 +1,11 @@
+{
+  "Name": "umb://dictionary-item/f6d958a43fb641a9a84350106743e0ae",
+  "Alias": null,
+  "ItemKey": "Test Dictionary Item",
+  "ParentId": null,
+  "Translations": [],
+  "Udi": "umb://dictionary-item/f6d958a43fb641a9a84350106743e0ae",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DictionaryItemArtifact",
+  "__version": "9.0.1"
+}

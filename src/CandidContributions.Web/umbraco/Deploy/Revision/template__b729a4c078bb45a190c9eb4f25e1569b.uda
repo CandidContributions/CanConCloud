@@ -1,0 +1,16 @@
+{
+  "Name": "Episode",
+  "Alias": "Episode",
+  "File": "umb://template-file/Episode.cshtml",
+  "Master": null,
+  "Udi": "umb://template/b729a4c078bb45a190c9eb4f25e1569b",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Episode.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "9.0.1"
+}

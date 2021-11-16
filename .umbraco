@@ -1,0 +1,3 @@
+[project]
+base = "src/CandidContributions.Web"
+csproj = "CandidContributions.Web.csproj"

@@ -1,0 +1,12 @@
+{
+  "Name": "Media Picker",
+  "Alias": null,
+  "EditorAlias": "Umbraco.MediaPicker3",
+  "DatabaseType": 0,
+  "Configuration": {"filter":null,"multiple":false,"validationLimit":{},"startNodeId":null,"ignoreUserStartNodes":false,"enableLocalFocalPoint":false,"crops":[]},
+  "Parent": null,
+  "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "9.0.1"
+}

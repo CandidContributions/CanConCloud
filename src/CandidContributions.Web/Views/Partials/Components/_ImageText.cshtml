@@ -1,0 +1,13 @@
+﻿@model CandidContributions.Core.Models.Shared.ImageTextViewModel
+<section class="component image-text has-background full-width" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 image">
+                <img src="~/images/high-five.png" alt="high-five" />
+            </div>
+            <div class="col-6 text">
+                @Html.Raw(Model.Text)
+            </div>
+        </div>
+    </div>
+</section>

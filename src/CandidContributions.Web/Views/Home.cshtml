@@ -1,0 +1,70 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<CandidContributions.Core.Models.Pages.HomePageModel>
+@{
+    Layout = "_Master.cshtml";
+}
+
+@if (Model.LatestEpisode != null)
+{
+    <partial name="Partials/_HomepageBanner" model="Model.LatestEpisode" />
+}
+
+<div class="main-content main-content--padded">
+
+    <h2 class="intro-text cancon-hand">@Model.AboutUsTitle</h2>
+    <p class="intro-text">@Model.AboutUsDescription</p>
+
+    <div class="align--center">
+        <p>@Html.Raw(Model.AboutUsLinkText)</p>
+
+        <div>
+            <img class="contribs-team" src="@Model.AboutUsImage.MediaUrl()" alt="candid contribs team" />
+        </div>
+    </div>
+</div>
+
+@if (Model.UpcomingEvents.Any())
+{
+    <h2 class="section-header cancon-hand align--center">Upcoming events</h2>
+    foreach (var eventPage in Model.UpcomingEvents)
+    {
+        @*if (eventPage.HeaderLogo != null)
+        {
+            <div class="@eventPage.CssClass">
+                <div class="mobile-deets align--center">
+                    <img src="@eventPage.HeaderLogo.MediaUrl()" alt="@eventPage.Name" />
+                </div>
+            </div>
+        }*@
+        <div class="main-content align--center">
+            <a href="@eventPage.Url()"><img src="~/images/625x251_umbracktoberfest.jpg" /></a>
+            <p>A virtual Umbraco hackathon on Fri 16th and Sat 17th October - <a href="@eventPage.Url()">full details and sign up</a></p>
+        </div>
+    }
+    <div class="main-content">
+        <p>&nbsp;</p>
+    </div>
+}
+
+@if (Model.PastEvents.Any())
+{
+    <h2 class="section-header cancon-hand align--center">Past events</h2>
+    foreach (var eventPage in Model.PastEvents)
+    {
+        var styling = "width:200px;margin-bottom:20px;";
+        if (eventPage.CssClass == "umbrackathon")
+        {
+            styling = "width:400px;margin-bottom:20px;";
+        }
+        <a href="@eventPage.Url()">
+            <div>
+                <div class="mobile-deets align--center">
+                    <img src="@eventPage.HeaderLogo.MediaUrl()" alt="@eventPage.Name" style="@styling" />
+                </div>
+            </div>
+        </a>
+
+    }
+    <div class="main-content">
+        <p>&nbsp;</p>
+    </div>
+}

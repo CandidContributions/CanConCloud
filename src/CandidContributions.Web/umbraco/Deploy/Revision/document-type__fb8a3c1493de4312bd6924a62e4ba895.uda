@@ -1,0 +1,152 @@
+{
+  "Name": "Home",
+  "Alias": "home",
+  "DefaultTemplate": "umb://template/54efdedd07544b46960196591a0b106f",
+  "AllowedTemplates": [
+    "umb://template/54efdedd07544b46960196591a0b106f"
+  ],
+  "Icon": "icon-home color-black",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": true,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/d4759ea6cda346d6a3394424e948790f",
+      "umb://document-type/66f965c19fa54db1b7f18b7d5eb873b5"
+    ]
+  },
+  "Parent": "umb://document-type-container/021ade625f0d4476aa0fdaba0c90137b",
+  "CompositionContentTypes": [
+    "umb://document-type/b19129a75c554eb0a946acacb195db11"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "3a16bdcb-e9d5-498a-86b5-3a92eed41594",
+      "Name": "Page Content",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "pageContent",
+      "PropertyTypes": [
+        {
+          "Key": "0b0f7d1a-9220-452a-a59b-40fda894c351",
+          "Alias": "aboutUsLinkText",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "About Us Link Text",
+          "SortOrder": 3,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "0d5a7305-d325-4766-aca2-e2fbdb842840",
+          "Alias": "aboutUsDescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "About Us Description",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "a8293ab6-fa39-48d9-b7f4-2a947d014f2a",
+          "Alias": "aboutUsTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "About Us Title",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "dd8452a3-8257-4b9a-a600-377e5c8f2fab",
+          "Alias": "aboutUsImage",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "About Us Image",
+          "SortOrder": 2,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/fb8a3c1493de4312bd6924a62e4ba895",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/021ade625f0d4476aa0fdaba0c90137b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/66f965c19fa54db1b7f18b7d5eb873b5",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/b19129a75c554eb0a946acacb195db11",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/d4759ea6cda346d6a3394424e948790f",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/54efdedd07544b46960196591a0b106f",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

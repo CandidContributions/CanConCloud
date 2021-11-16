@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<EventStatus>
+@{
+    Layout = "_Master.cshtml";
+
+    var eventsPage = (EventsPage)Model.Parent;
+}
+
+<div class="events-page event-@eventsPage.CssClass">
+    <div class="events-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-12-sm">
+                    @if (eventsPage.HeaderLogo != null)
+                    {
+                        if (eventsPage.HeaderLogoMobileOnly)
+                        {
+                            <img src="@eventsPage.HeaderLogo.MediaUrl()" alt="@eventsPage.HeaderWords" class="mobile-only" />
+                        }
+                        else
+                        {
+                            <img src="@eventsPage.HeaderLogo.MediaUrl()" alt="@eventsPage.HeaderWords" />
+                        }
+                    }
+                    else
+                    {
+                        <h1>@eventsPage.HeaderWords</h1>
+                    }
+                </div>
+
+                <div class="col-7 col-12-sm">
+                    <h2>@Model.Heading</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container" style="color: #000;">
+            @Model.Introduction
+        </div>
+    </div>
+    <div class="mushroom-field" id="mushroom-field" data-event-name="@eventsPage.CssClass">
+        <h3 id="planting">
+            planting <span>.</span><span>.</span><span>.</span>
+        </h3>
+        <h3 id="replanting" style="display: none;">
+            replanting <span>.</span><span>.</span><span>.</span>
+        </h3>
+    </div>
+</div>

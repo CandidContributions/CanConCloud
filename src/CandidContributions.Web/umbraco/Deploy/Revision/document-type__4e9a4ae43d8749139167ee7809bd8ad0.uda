@@ -1,0 +1,38 @@
+{
+  "Name": "BingoPhrasesFolder",
+  "Alias": "bingoPhrasesFolder",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-list color-indigo",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": true,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/30515320ed9f4e649ac8ae5c00d9a9ff"
+    ]
+  },
+  "Parent": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/4e9a4ae43d8749139167ee7809bd8ad0",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/30515320ed9f4e649ac8ae5c00d9a9ff",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

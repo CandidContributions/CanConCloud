@@ -1,0 +1,31 @@
+{
+  "Name": "BingoWord",
+  "Alias": "bingoWord",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-circle-dotted color-indigo",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b603d3cdc7164d4b9783e62d5328a4d5",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/df0db8387cb3408292d8b85ef38bcb16",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

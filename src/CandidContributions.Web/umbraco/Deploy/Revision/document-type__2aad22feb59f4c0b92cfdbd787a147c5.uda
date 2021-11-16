@@ -1,0 +1,38 @@
+{
+  "Name": "Library Root",
+  "Alias": "libraryRoot",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-books color-black",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": true,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/b09a5c20d4fb47fa8e0f05020b2e5a50"
+    ]
+  },
+  "Parent": "umb://document-type-container/d3ea95069d4d4608a89a3261bb7c789a",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/2aad22feb59f4c0b92cfdbd787a147c5",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/d3ea95069d4d4608a89a3261bb7c789a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/b09a5c20d4fb47fa8e0f05020b2e5a50",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

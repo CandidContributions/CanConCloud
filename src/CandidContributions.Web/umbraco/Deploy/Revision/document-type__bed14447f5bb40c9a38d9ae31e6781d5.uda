@@ -1,0 +1,83 @@
+{
+  "Name": "_Navigation",
+  "Alias": "navigation",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/0606ef6edde840ccb0c24e9565989e90",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "a3ddc666-29e3-48bc-8f9d-fa235bd78c37",
+      "Name": "Navigation",
+      "SortOrder": 99,
+      "Type": 0,
+      "Alias": "navigation",
+      "PropertyTypes": [
+        {
+          "Key": "79d37fae-906d-4786-b15c-54be6934fea9",
+          "Alias": "menuIcon",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "icon to use if page is set to appear in header menu",
+          "Mandatory": false,
+          "Name": "Menu Icon",
+          "SortOrder": 0,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "7d86eed4-bb61-40f4-a3a7-98a8d7361126",
+          "Alias": "umbracoNaviHide",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "surely we all know that this means?!",
+          "Mandatory": false,
+          "Name": "umbracoNaviHide",
+          "SortOrder": 1,
+          "Validation": "",
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/bed14447f5bb40c9a38d9ae31e6781d5",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/0606ef6edde840ccb0c24e9565989e90",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "9.0.1"
+}

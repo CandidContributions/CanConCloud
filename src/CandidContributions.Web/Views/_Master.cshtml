@@ -1,0 +1,28 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<!DOCTYPE html>
+<html>
+<head>
+    <partial name="Partials/_MetaTags" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/eoy7uue.css">
+    <link rel="stylesheet" href="~/content/css/site.min.css?v13" />
+    @await RenderSectionAsync("Head", required: false)
+</head>
+<body>
+    <div class="main-container">
+        <partial name="Partials/_Header" />
+        <div id="container">
+            <main>
+                @RenderBody()
+            </main>
+        </div>
+
+        <partial name="Partials/_Footer" />
+    </div>
+
+    <script src="~/content/js/site.js?v13" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
