@@ -8,12 +8,11 @@ The codebase has been copied into a GitHub repository so it is publicly accessib
 
 ## Working locally
 
-- **Umbraco Cloud authenticated users**: create a new local SQL database (you will be able to 'restore' from Cloud once the site is running)
-- **Public contributors**: download the [SQL Server database backup](CanConCloudGH.zip), unzip and restore to your local SQL Server 2019
+Unzip `db/CanConCloudGH.zip` and restore the extracted sql .bak to your local SQL Server 2019.
 
 Open `src/CandidContributions.sln` in Visual Studio and build the solution.
 
-You will need to set your database connection string before trying to run the website locally. Right click on the `CandidContributions.Web` project and select 'Manage User Secrets'.  Copy the following into `secrets.json` and add your local connection string:
+You will need to set your database connection string before trying to run the website locally. Right click on the `CandidContributions.Web` project and select 'Manage User Secrets' to open your local `secrets.json` file for this project. Copy the following into that file and add your local connection string:
 
 ```
 {
@@ -27,5 +26,11 @@ You should now be able to run this Umbraco 9 website.
 
 ### Backoffice login
 
-- **Umbraco Cloud users**: sign in with your Umbraco ID
-- **Public contributors**: user: `hello@candidcontributions.com`, password: `h5yr!h5yr!`
+To log in to the backoffice use:
+
+- Email: `hello@candidcontributions.com`
+- Password: `h5yr!h5yr!`
+
+## Questions?
+
+Create an issue and let's start a conversation!
