@@ -9,7 +9,7 @@ The codebase has been copied into a GitHub repository so it is publicly accessib
 ## Working locally
 
 - **Umbraco Cloud authenticated users**: create a new local SQL database (you will be able to 'restore' from Cloud once the site is running)
-- **Public contributors**: download the SQL Server Database backup *coming soon* and restore to your local SQL Server 2019
+- **Public contributors**: download the [SQL Server database backup](CanConCloudGH.zip), unzip and restore to your local SQL Server 2019
 
 Open `src/CandidContributions.sln` in Visual Studio and build the solution.
 
@@ -28,4 +28,4 @@ You should now be able to run this Umbraco 9 website.
 ### Backoffice login
 
 - **Umbraco Cloud users**: sign in with your Umbraco ID
-- **Public contributors**: TBC
+- **Public contributors**: user: `hello@candidcontributions.com`, password: `h5yr!h5yr!`
