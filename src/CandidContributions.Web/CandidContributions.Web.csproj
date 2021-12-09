@@ -14,8 +14,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Umbraco.Cloud.Identity.Cms" Version="4.0.50" />
-        <PackageReference Include="Umbraco.Cloud.StorageProviders.AzureBlob" Version="4.0.0" />
         <PackageReference Include="Umbraco.Cms" Version="9.0.1" />
         <PackageReference Include="Umbraco.Deploy.Cloud" Version="9.0.1" />
         <PackageReference Include="Umbraco.Deploy.Contrib" Version="9.0.0" />
