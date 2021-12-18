@@ -5,16 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\Api\DiscordBot\**" />
     <Compile Remove="Models\Api\GitHub\**" />
-    <EmbeddedResource Remove="Models\Api\DiscordBot\**" />
     <EmbeddedResource Remove="Models\Api\GitHub\**" />
-    <None Remove="Models\Api\DiscordBot\**" />
     <None Remove="Models\Api\GitHub\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\Api\DiscordBotController.cs" />
     <Compile Remove="Controllers\Api\MailchimpApiController.cs" />
     <Compile Remove="Models\Api\GuestbookContribution.cs" />
     <Compile Remove="Models\Api\GuestbookEntry.cs" />
