@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Umbraco.Cms" Version="9.0.1" />
+	    <PackageReference Include="Umbraco.Cms" Version="9.0.1" />
         <PackageReference Include="Umbraco.Deploy.Cloud" Version="9.0.1" />
         <PackageReference Include="Umbraco.Deploy.Contrib" Version="9.0.0" />
         <PackageReference Include="Umbraco.Deploy.Forms" Version="9.0.1" />

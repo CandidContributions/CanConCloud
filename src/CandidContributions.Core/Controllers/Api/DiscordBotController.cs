@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Http;
-using CandidContribs.Core.Models.Api.DiscordBot;
-using CandidContribs.Core.Models.Published;
-using StackExchange.Profiling.Internal;
-using Umbraco.Web;
-using Umbraco.Web.WebApi;
+using CandidContributions.Core.Models.Api.DiscordBot;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Umbraco.Cms.Core.Web;
+using Umbraco.Cms.Web.Common.Controllers;
+using Umbraco.Cms.Web.Common.PublishedModels;
+using Umbraco.Extensions;
 
 namespace CandidContribs.Core.Controllers.Api
 {
@@ -18,6 +17,12 @@ namespace CandidContribs.Core.Controllers.Api
     {
         private static readonly Lazy<List<TokenRequestFail>> _tokenRequestFails = new Lazy<List<TokenRequestFail>>(() => new List<TokenRequestFail>());
         private static readonly Lazy<string> _token = new Lazy<string>(GenerateToken);
+        private readonly IUmbracoContextAccessor _umbracoContextAccessor;
+
+        public DiscordBotController(IUmbracoContextAccessor umbracoContextAccessor)
+        {
+            _umbracoContextAccessor = umbracoContextAccessor;
+        }
 
         /// <summary>
         /// This endpoint is used to block spamming secrets and supplying a very basic access token
@@ -27,7 +32,7 @@ namespace CandidContribs.Core.Controllers.Api
         /// <returns></returns>
         [HttpPost]
         [Route("Token")]
-        public IHttpActionResult Token([FromBody]string secret)
+        public IActionResult Token([FromBody]string secret)
         {
             if (secret.IsNullOrWhiteSpace())
             {
@@ -45,8 +50,13 @@ namespace CandidContribs.Core.Controllers.Api
                 return BadRequest("To many failed attempts");
             }
 
-            var discordBotFolder = Umbraco.ContentAtRoot()
-                .FirstOrDefault(n => n.IsDocumentType(DiscordBotFolder.ModelTypeAlias)) as DiscordBotFolder;
+            if(_umbracoContextAccessor.TryGetUmbracoContext(out var umbracoContext))
+            {
+                return NotFound("Could not find an Umbraco Context");
+            }
+
+            var discordBotFolder = umbracoContext.Content.GetAtRoot()
+                .FirstOrDefault(n => n.ContentType.Alias ==DiscordBotFolder.ModelTypeAlias) as DiscordBotFolder;
             if (discordBotFolder?.Secret.IsNullOrWhiteSpace() != false)
             {
                 return BadRequest("Invalid server configuration");
@@ -63,16 +73,21 @@ namespace CandidContribs.Core.Controllers.Api
 
         [HttpGet]
         [Route("BingoConfiguration")]
-        public IHttpActionResult BingoConfiguration(string token, int wordCount)
+        public IActionResult BingoConfiguration(string token, int wordCount)
         {
             if (token != _token.Value)
             {
                 return Unauthorized();
             }
 
+            if (_umbracoContextAccessor.TryGetUmbracoContext(out var umbracoContext))
+            {
+                return NotFound("Could not find an Umbraco Context");
+            }
+
             //todo this should be moved into a service
-            var discordBotFolder = Umbraco.ContentAtRoot()
-                .FirstOrDefault(n => n.IsDocumentType(DiscordBotFolder.ModelTypeAlias)) as DiscordBotFolder;
+            var discordBotFolder = umbracoContext.Content.GetAtRoot()
+                .FirstOrDefault(n => n.ContentType.Alias == DiscordBotFolder.ModelTypeAlias) as DiscordBotFolder;
             var bingoFolder = discordBotFolder.FirstChild<BingoFolder>();
             var configuration = new BingoConfiguration();
             configuration.Words = bingoFolder.FirstChild<BingoWordsFolder>()
@@ -81,8 +96,8 @@ namespace CandidContribs.Core.Controllers.Api
                 .Select(kp => new KeyedPhrases
                 { Key = kp.Key, Phrases = kp.Collection.Select(p => new Phrase { Boost = p.Boost, Text = p.Text }).ToList() })
                 .ToList();
-            var autoRoundSettings = bingoFolder.FirstChild<BingoSettings>().FirstChild<Models.Published.AutoRoundSettings>();
-            configuration.AutoRoundSettings = new Models.Api.DiscordBot.AutoRoundSettings
+            var autoRoundSettings = bingoFolder.FirstChild<BingoSettings>().FirstChild<Umbraco.Cms.Web.Common.PublishedModels.AutoRoundSettings>();
+            configuration.AutoRoundSettings = new CandidContributions.Core.Models.Api.DiscordBot.AutoRoundSettings
             {
                 MaximumTimeout = autoRoundSettings.MaximumTimeout,
                 MinimumTimeout = autoRoundSettings.MinimumTimeOut,
@@ -94,22 +109,11 @@ namespace CandidContribs.Core.Controllers.Api
         }
 
 
-        private string GetClientIp(HttpRequestMessage request = null)
+        private string GetClientIp(HttpRequest request = null)
         {
-            request = request ?? Request;
+            request = request ?? base.Request;
 
-            if (request.Properties.ContainsKey("MS_HttpContext"))
-            {
-                return ((HttpContextWrapper)request.Properties["MS_HttpContext"]).Request.UserHostAddress;
-            }
-            else if (HttpContext.Current != null)
-            {
-                return HttpContext.Current.Request.UserHostAddress;
-            }
-            else
-            {
-                return null;
-            }
+            return request.HttpContext.Connection.RemoteIpAddress.ToString();
         }
 
         private static string GenerateToken()
